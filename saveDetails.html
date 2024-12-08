@@ -1,0 +1,24 @@
+<!-- saveDetails.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Saved</title>
+    <!-- Adjusted path for the CSS file located in the 'Public' folder -->
+    <link rel="stylesheet" href="/Public/styles.css">
+</head>
+<body>
+    <h2>Profile Saved Successfully!</h2>
+    <p id="userName"></p>
+    <p id="userEmail"></p>
+    <p id="userMobile"></p>
+
+    <script>
+        // Retrieve data from local storage
+        document.getElementById('userName').innerText = "Name: " + localStorage.getItem('userName');
+        document.getElementById('userEmail').innerText = "Email: " + localStorage.getItem('userEmail');
+        document.getElementById('userMobile').innerText = "Mobile: " + localStorage.getItem('userMobile');
+    </script>
+</body>
+</html>

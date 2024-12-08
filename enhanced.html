@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Features</title>
+    <link rel="stylesheet" href="enhanced-style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Enhanced Features for Health</h1>
+        </header>
+        
+        <section class="enhancement">
+            <h2>Let's Personalize Your Health!</h2>
+            <p>Progress: <span>33%</span></p>
+
+            <!-- Weight & Height Inputs -->
+            <div class="inputs">
+                <div>
+                    <label>Weight (kg/lbs):</label>
+                    <input type="range" min="30" max="150">
+                </div>
+                <div>
+                    <label>Height (cm/ft):</label>
+                    <input type="range" min="120" max="210">
+                </div>
+            </div>
+
+            <!-- Fitness Level Selector -->
+            <div class="fitness-level">
+                <h3>Fitness Level Selector</h3>
+                <button class="btn">Beginner</button>
+                <button class="btn">Intermediate</button>
+                <button class="btn">Advanced</button>
+            </div>
+
+            <!-- Health Goals -->
+            <div class="health-goals">
+                <h3>Health Goals</h3>
+                <ul>
+                    <li>Weight Loss</li>
+                    <li>Gain Muscle</li>
+                    <li>Improve Endurance</li>
+                </ul>
+            </div>
+
+            <!-- Health Metrics -->
+            <section class="health-metrics">
+                <h2>Health Metrics</h2>
+                <div class="metric">
+                    <label for="heart-rate">Resting Heart Rate:</label>
+                    <input type="range" id="heart-rate" min="60" max="100" value="72">
+                    <span>72 bpm (Healthy Range: 60-80 bpm)</span>
+                </div>
+                <div class="metric">
+                    <label for="body-fat">Body Fat Percentage:</label>
+                    <input type="range" id="body-fat" min="18" max="24" value="20">
+                    <span>20% (Healthy Range: 18-24%)</span>
+                </div>
+            </section>
+            
+
+            <!-- Visual Health Summary -->
+            <div class="visual-summary">
+                <h3>Visual Health Summary</h3>
+                <canvas id="lineChart"></canvas>
+                <canvas id="pieChart"></canvas>
+            </div>
+
+            <!-- Personalized Tips -->
+            <div class="tips">
+                <h3>Personalized Tips or Suggestions</h3>
+                <p>Based on your goals, we recommend focusing on strength training 3 times a week.</p>
+                <p>AI-powered suggestions for workouts or meal plans tailored to your data.</p>
+            </div>
+
+            <!-- Privacy -->
+            <div class="privacy">
+                <h3>Privacy and Security</h3>
+                <p>Your health data is securely encrypted and used only to personalize your experience.</p>
+            </div>
+
+            <!-- Navigation Buttons -->
+<div class="navigation">
+    <a href="verification.html" id="backBtn" class="btn">Back</a> <!-- Link to Verification Screen -->
+    <a href="dashboard.html" id="nextBtn" class="btn">Next</a> <!-- Link to Dashboard Screen -->
+</div>
+
+        </section>
+    </div>
+
+    <script src="script/app.js"></script>
+</body>
+</html>

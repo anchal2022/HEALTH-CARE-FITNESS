@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+        background-image: url('background-image.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: #292929;
+    border-radius: 12px;
+    overflow-y: auto;
+    height: 95vh;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f57c00;
+}
+
+.profile-btn {
+    padding: 10px 15px;
+    background: #f57c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Charts Section */
+canvas {
+    margin: 15px 0;
+}
+
+/* Tabs */
+.chart-tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #f57c00;
+    color: #f57c00;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Goal Tracker */
+.badges {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.badge {
+    flex: 1;
+    padding: 15px;
+    background: #f57c00;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* AI Suggestions */
+.suggestion {
+    background: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #f57c00;
+}
+.social-engagement {
+    text-align: left; /* Aligns content to the left */
+    margin-left: 0; /* Ensures no unnecessary spacing */
+}
+
+.share-btn {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* Customization Options */
+.custom-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.custom-btn.light {
+    background: #fff;
+    color: #000;
+}
+
+.custom-btn.dark {
+    background: #000;
+    color: #fff;
+}
+
+/* Download Button */
+.btn {
+    padding: 10px 20px;
+    background: #f57c00;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}

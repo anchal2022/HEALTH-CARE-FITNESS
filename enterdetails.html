@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Details</title>
+    <link rel="stylesheet" href="enterdetails.css">
+</head>
+<body>
+    <div class="details-container">
+        <h1>Enter Your Details</h1>
+        <form>
+            <input type="text" placeholder="Enter your full name" required>
+            <input type="email" placeholder="example@example.com" required>
+            <input type="tel" placeholder="Enter your mobile number" required>
+            <select required>
+                <option value="" disabled selected>Select your age</option>
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="36-45">36-45</option>
+                <option value="46+">46+</option>
+            </select>
+            <div class="gender-section">
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female" required> Female</label>
+                <label><input type="radio" name="gender" value="Other" required> Other</label>
+            </div>
+            <div class="button-group">
+                <!-- Back button to redirect to the login/signup screen -->
+                <button type="button" class="back-btn" onclick="location.href='login.html'">Back</button>
+                <button type="submit" class="next-btn" onclick="location.href='verification.html'">Next</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

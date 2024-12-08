@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+        background-image: url('background-image.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+/* Ensure scrolling aligns with your container */
+.container {
+    max-width: 400px; /* Adjust for mobile or specific screen size */
+    margin: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9); /* Adjust transparency for dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: scroll; /* Allow scroll inside container */
+    height: 95vh; /* Full height of screen */
+    scrollbar-width: thin; /* For modern browsers */
+    scrollbar-color: orange black; /* Customize scrollbar color */
+}
+
+/* For custom scrollbar on webkit browsers */
+.container::-webkit-scrollbar {
+    width: 8px; /* Width of scrollbar */
+}
+
+.container::-webkit-scrollbar-track {
+    background: black; /* Track background */
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: orange; /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded scrollbar */
+}
+
+.header {
+    text-align: center;
+    color: #ff9800;
+}
+
+.inputs div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.fitness-level {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.health-goals ul {
+    padding-left: 20px;
+}
+
+.visual-summary {
+    margin: 20px 0;
+}
+
+canvas {
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+/* Health Metrics Section */
+.metric {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.metric label {
+    flex: 2;
+    font-weight: bold;
+}
+
+.metric input[type="range"] {
+    flex: 3;
+    margin: 0 10px;
+}
+
+.metric span {
+    flex: 2;
+    text-align: right;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Graph Enhancements */
+#barChart, #lineChart {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ff9800; /* Add border for clarity */
+}
+
+.chart-label {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+}
+

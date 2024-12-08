@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">FitTrack</div>
+            <button class="profile-btn">Profile</button>
+        </header>
+
+        <!-- Progress Charts Section -->
+        <section class="progress-charts">
+            <h2>Progress Charts</h2>
+            <div class="chart-tabs">
+                <button class="tab-btn">Weekly</button>
+                <button class="tab-btn">Monthly</button>
+                <button class="tab-btn">Yearly</button>
+            </div>
+            <canvas id="lineChart"></canvas>
+            <canvas id="barChart"></canvas>
+        </section>
+
+        <!-- Goal Completion Tracker -->
+        <section class="goal-tracker">
+            <h2>Goal Completion Tracker with Badges</h2>
+            <div class="badges">
+                <div class="badge">Weight Loss</div>
+                <div class="badge">Fitness Goals</div>
+            </div>
+        </section>
+
+        <!-- AI-Powered Suggestions -->
+        <section class="ai-suggestions">
+            <h2>AI-Powered Suggestions</h2>
+            <div class="suggestion">Nutrition Advice: Expand your diet to include more proteins.</div>
+            <div class="suggestion">Exercise Adjustments: Try HIIT workouts for improvement.</div>
+            <div class="suggestion">Real-Time Feedback: Keep up the progress!</div>
+        </section>
+
+        <!-- Health Metrics Summary -->
+        <section class="health-metrics">
+            <h2>Health Metrics Summary</h2>
+            <p>Resting Heart Rate: 72 BPM</p>
+            <p>Body Fat Percentage: 20%</p>
+            <p>BMI: 23.5</p>
+            <p>Calories Burned: 500 kcal</p>
+        </section>
+         <!-- social-engagement Summary -->
+        <section class="social-engagement">
+            <h2>Social Engagement</h2>
+            <button class="btn share-btn">Share Now</button>
+        </section>
+        
+        <!-- Customization Options -->
+        <section class="customization">
+            <h2>Customization Options</h2>
+            <button class="custom-btn light">Light Mode</button>
+            <button class="custom-btn dark">Dark Mode</button>
+        </section>
+
+        <!-- Reports Section -->
+        <section class="reports">
+            <h2>Weekly/Monthly Health Reports</h2>
+            <button class="btn">Download Report</button>
+        </section>
+
+        <!-- Privacy Section -->
+        <section class="privacy">
+            <h2>Data Privacy & Security</h2>
+            <p>Your data is encrypted and used for personalized recommendations only.</p>
+        </section>
+    </div>
+
+    <script src="script/apps.js"></script>
+</body>
+</html>

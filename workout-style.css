@@ -1,0 +1,152 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styles */
+body {
+    background-color: black; /* Full black background */
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Default text color is white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.9); /* Slightly transparent black background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Subtle shadow for depth */
+    overflow-y: auto; /* Add scroll for overflow content */
+    max-height: 90vh; /* Ensure content fits within the viewport */
+    text-align: center; /* Center-align content inside the container */
+}
+
+/* Header Styles */
+.header {
+    margin-bottom: 20px;
+}
+
+.header .logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+.header h1 {
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Card Styles */
+.card {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: left; /* Align card content to the left */
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333; /* Dark background for input fields */
+    color: white; /* White text inside input fields */
+}
+
+/* Buttons */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn.blue {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn.orange {
+    background-color: #ff5722;
+    color: white;
+}
+
+/* Section Divider */
+.section-divider {
+    border-top: 1px solid #ff5722;
+    margin: 20px 0;
+}
+
+/* Footer Styles */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+/* Gamification Logos */
+.images {
+    display: flex;
+    justify-content: space-around; /* Evenly space logos */
+    margin-top: 20px;
+}
+
+.badge {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff; /* Add a white background */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+/* Chart Section */
+.chart {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Scrollbar Styling */
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #ff5722;
+    border-radius: 5px;
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+}

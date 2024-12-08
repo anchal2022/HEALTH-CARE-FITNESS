@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Screen</title>
+    <link rel="stylesheet" href="setting-style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+        <h1>Personalization Hub</h1>
+        </header>
+
+        <!-- Profile Section -->
+        <section class="profile-section">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+            <button class="edit-profile-btn">Edit Profile Picture</button>
+        </section>
+
+        <!-- Profile Settings -->
+        <div class="profile-settings">
+            <h2>Profile Settings</h2>
+            <div class="input-field">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" placeholder="Enter your username" autocomplete="off" />
+            </div>
+            <div class="input-field">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="off" />
+            </div>
+          </div>
+          
+
+        <!-- Notification Preferences -->
+        <section class="notification-preferences">
+            <h2>Notification Preferences</h2>
+            <label>
+                <input type="checkbox"> Workout Reminders
+            </label>
+            <label>
+                <input type="checkbox"> Health Updates
+            </label>
+        </section>
+
+        <!-- Privacy & Security -->
+        <section class="privacy-security">
+            <h2>Privacy & Security</h2>
+            <button class="enable-ai-btn">Enable AI-Based Suggestions</button>
+        </section>
+
+        <!-- App Customization -->
+        <section class="app-customization">
+            <h2>App Customization</h2>
+            <label>
+                <input type="radio" name="theme"> Light Theme
+            </label>
+            <label>
+                <input type="radio" name="theme"> Dark Theme
+            </label>
+            <label>
+                <input type="radio" name="theme"> Custom Theme
+            </label>
+        </section>
+
+        <!-- Progress Sync -->
+        <section class="progress-sync">
+            <h2>Progress Sync</h2>
+            <p>Sync Status: Enabled</p>
+        </section>
+
+        <!-- Language & Region -->
+        <section class="language-region">
+            <h2>Language & Region</h2>
+            <label for="language">Language:</label>
+            <select id="language">
+                <option>English</option>
+                <option>Hindi</option>
+                <option>Spanish</option>
+            </select>
+        </section>
+
+        <!-- Help & Support -->
+        <section class="help-support">
+            <h2>Help & Support</h2>
+            <button class="chat-support-btn">Chat Support</button>
+        </section>
+
+        <!-- Social Engagement Preferences -->
+        <section class="social-engagement">
+            <h2>Social Engagement Preferences</h2>
+            <label>
+                <input type="checkbox"> Enable Comments
+            </label>
+            <label>
+                <input type="checkbox"> Control Visibility
+            </label>
+        </section>
+    </div>
+</body>
+</html>

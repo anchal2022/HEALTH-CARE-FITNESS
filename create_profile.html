@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .container h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
+            color: #fff;
+        }
+
+        .upload-btn {
+            background-color: #ff7043;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 20px;
+            cursor: pointer;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .upload-btn:hover {
+            background-color: #ff5722;
+        }
+
+        .input-container {
+            margin: 15px 0;
+        }
+
+        .input-container input {
+            width: 90%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .fitness-options {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .slider-container {
+            text-align: left;
+            margin: 15px 0;
+        }
+
+        .slider-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .slider-container input[type="range"] {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .slider-value {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .info-text {
+            margin: 15px 0;
+            color: #ccc;
+            font-size: 12px;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 25px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .back-btn {
+            background-color: #f44336;
+        }
+
+        .back-btn:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Let’s Personalize Your Fitness Journey!</h2>
+        <button class="upload-btn">Upload Profile Picture</button>
+        <div class="input-container">
+            <input type="text" placeholder="Tell us what motivates you!">
+        </div>
+        <div class="fitness-options">
+            <span>Strength Training</span>
+            <span>Yoga</span>
+            <span>Cardio</span>
+        </div>
+        <div class="slider-container">
+            <label for="targetWeight">Target Weight</label>
+            <input type="range" id="targetWeight" min="40" max="150" value="70" oninput="showWeight()">
+            <span class="slider-value" id="weightValue">70 kg</span>
+        </div>
+        <div class="slider-container">
+            <label for="exerciseDuration">Weekly Exercise Duration</label>
+            <input type="range" id="exerciseDuration" min="1" max="10" value="3" oninput="showDuration()">
+            <span class="slider-value" id="durationValue">3 hours</span>
+        </div>
+        <p class="info-text">Your data is secure and will only be used to personalize your experience.</p>
+        <p class="info-text">Need help?</p>
+        <div class="action-buttons">
+            <button class="btn back-btn" onclick="goBack()">Back</button>
+            <button class="btn">Next</button>
+        </div>
+    </div>
+
+    <script>
+        // Show Target Weight value dynamically
+        function showWeight() {
+            const weightSlider = document.getElementById("targetWeight");
+            const weightValue = document.getElementById("weightValue");
+            weightValue.textContent = `${weightSlider.value} kg`;
+        }
+
+        // Show Weekly Exercise Duration value dynamically
+        function showDuration() {
+            const durationSlider = document.getElementById("exerciseDuration");
+            const durationValue = document.getElementById("durationValue");
+            durationValue.textContent = `${durationSlider.value} hours`;
+        }
+
+        // Back Button Logic
+        function goBack() {
+            window.location.href = "verification.html"; // Redirect to the Verification Screen
+        }
+    </script>
+</body>
+</html>

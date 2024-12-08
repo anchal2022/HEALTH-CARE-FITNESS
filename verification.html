@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Screen</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.9); /* Black background with slight transparency */
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        .input-container {
+            margin: 15px 0 25px;
+        }
+
+        .input-container input {
+            width: 90%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 25px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .btn:disabled {
+            background-color: #aaa;
+            cursor: not-allowed;
+        }
+
+        .help-text {
+            margin-top: 15px;
+            color: #eeeeee;
+            font-size: 14px;
+        }
+
+        .back-btn {
+            background-color: #f44336;
+            margin-top: 15px;
+            color: #fff;
+            padding: 12px 25px;
+            font-size: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>We've sent a 6-digit code</h2>
+        <p>Enter the code below to verify your account.</p>
+        <div class="input-container">
+            <input type="text" id="verificationCode" placeholder="Enter 6-digit code" maxlength="6">
+        </div>
+        <button id="resendBtn" class="btn" disabled>Resend Code</button>
+        <p id="timerText" class="help-text">Resend in 30 seconds</p>
+        <button id="backBtn" class="back-btn">Back</button>
+    </div>
+
+    <script>
+        // Timer Logic for Resend Button
+        let timer = 30;
+        const timerText = document.getElementById("timerText");
+        const resendBtn = document.getElementById("resendBtn");
+        const backBtn = document.getElementById("backBtn");
+
+        const countdown = setInterval(() => {
+            if (timer > 0) {
+                timer--;
+                timerText.innerText = `Resend in ${timer} seconds`;
+            } else {
+                clearInterval(countdown);
+                resendBtn.disabled = false;
+                timerText.innerText = "";
+            }
+        }, 1000);
+
+        // Resend Button Click Event
+        resendBtn.addEventListener("click", () => {
+            alert("Code resent successfully!");
+            timer = 30;
+            resendBtn.disabled = true;
+            timerText.innerText = "Resend in 30 seconds";
+            countdown();
+        });
+
+        // Back Button Logic
+        backBtn.addEventListener("click", () => {
+            window.location.href = "enterdetails.html"; // Redirect to the Enter Your Details screen
+        });
+    </script>
+</body>
+</html>

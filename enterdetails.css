@@ -1,0 +1,73 @@
+body {
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.details-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Maximum width for larger screens */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #FF6B6B;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form input,
+form select {
+    width: calc(100% - 20px); /* Adjust to prevent overflow */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.gender-section {
+    display: flex;
+    justify-content: space-around; /* Align radio buttons horizontally */
+    margin: 15px 0;
+}
+
+.gender-section label {
+    font-size: 14px;
+    color: #333;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.back-btn,
+.next-btn {
+    width: 48%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-btn {
+    background-color: #ccc;
+    color: #333;
+}
+
+.next-btn {
+    background-color: #FF6B6B;
+    color: white;
+}

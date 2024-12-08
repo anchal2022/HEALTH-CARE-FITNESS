@@ -1,0 +1,179 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: black; /* Black background */
+    background-image: url('background-image.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 90vh;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+/* Challenges Box */
+.challenge-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.challenge {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Leaderboard */
+.leaderboard {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.leaderboard li {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Social Engagement */
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.engagement {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Notifications */
+.notifications label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Rewards */
+.rewards {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.rewards li {
+    margin-bottom: 5px;
+}
+
+/* AI Suggestions */
+.ai-suggestions .suggestion {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn.join {
+    background-color: #4caf50;
+}
+/* Footer Navigation Styles */
+.bottom-nav {
+    position: fixed;
+    bottom: 0; /* Stick to the bottom */
+    left: 50%; /* Start from the middle horizontally */
+    transform: translateX(-50%); /* Center align */
+    width: 100%; /* Full width for navigation */
+    max-width: 400px; /* Mobile-friendly width */
+    background-color: #222; /* Dark background */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-around; /* Equal spacing between icons */
+    align-items: center; /* Center icons vertically */
+    padding: 10px 0; /* Adjust vertical padding */
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Slight shadow */
+    
+}
+
+
+.bottom-nav .icon {
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Align icons vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    font-size: 24px; /* Adjust icon size */
+    color: white; /* Icon color */
+    cursor: pointer; /* Interactive pointer cursor */
+    text-align: center; /* Center align text if added */
+}
+
+.bottom-nav .icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    transition: transform 0.2s ease; /* Smooth transition */
+}

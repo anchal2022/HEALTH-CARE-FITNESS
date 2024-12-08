@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #FF6B6B;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+h1 .fitnexus {
+    color: #FF6B6B;
+    font-weight: bold;
+}
+
+/* Input Fields */
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Password Field */
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    width: 100%;
+    padding-right: 60px; /* Space for toggle button */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: #FF6B6B;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login-btn, .signup-btn {
+    width: 48%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: #6CA6CD;
+    color: white;
+}
+
+.signup-btn {
+    background-color: #FF6B6B;
+    color: white;
+}
+
+/* Social Buttons */
+.social-buttons {
+    margin: 20px 0;
+}
+
+.social-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.google {
+    background-color: #DB4437;
+}
+
+.facebook {
+    background-color: #3B5998;
+}
+
+.instagram {
+    background-color: #E4405F;
+}
+
+/* Forgot Password */
+.forgot-password {
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
